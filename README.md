@@ -1,7 +1,19 @@
+<div align="center">
+
 # Nexora — Anomaly Detection Subsystem
 
-> **AI-Driven Network Traffic Evaluation & Anomaly Detection**  
-> Official machine learning module designed to analyze network traffic stealth, detect anomalies, and benchmark against Tor traffic for the [Nexora Overlay Network](https://github.com/Youssef-Abo-Al-Ella/Nexora).
+**A Machine Learning Subsystem for the Post-Quantum, Invitation-Gated Anonymous Peer-to-Peer Overlay Network**
+
+*AI-driven network traffic evaluation, feature extraction, and anomaly detection benchmarked against Tor traffic.*
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python)
+![Scikit-Learn](https://img.shields.io/badge/ML-Scikit--Learn-orange?style=flat-square&logo=scikit-learn)
+![PyTorch](https://img.shields.io/badge/framework-PyTorch-ee4c2c?style=flat-square&logo=pytorch)
+![Scapy](https://img.shields.io/badge/packet--parsing-Scapy-yellow?style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
+![Status](https://img.shields.io/badge/status-research_prototype-db5139?style=flat-square)
+
+</div>
 
 ---
 
