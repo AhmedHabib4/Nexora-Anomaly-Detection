@@ -19,9 +19,11 @@
 
 ## 📌 Overview
 
-**Nexora-Anomaly-Detection** serves as the machine learning intelligence layer for the Nexora project—a Post-Quantum, Invitation-Gated Anonymous Peer-to-Peer Overlay Network. 
+**Nexora-Anomaly-Detection** is the dedicated machine learning intelligence layer for [Nexora](https://github.com/Youssef-Abo-Al-Ella/Nexora), a Post-Quantum, Invitation-Gated Anonymous Peer-to-Peer Overlay Network[cite: 18]. 
 
-This repository contains the model architectures, PCAP feature extraction pipelines, and traffic evaluation protocols engineered to analyze packet structures, score anomalies, and compare custom research protocol behavior against encrypted Tor stream footprints.
+While the core Nexora repository acts as the secure networking substrate—handling post-quantum cryptography, UDP socket routing, and distributed hash tables[cite: 6, 7]—this repository functions as its analytical engine. It was engineered specifically to analyze network telemetry, evaluate protocol stealth, and detect anomalous peer behavior[cite: 6].
+
+By parsing raw `.pcap` network captures, this subsystem extracts critical flow metrics (such as Inter-Arrival Time, flow duration, and packet length distributions) and processes them through predictive machine learning models. Using both Random Forest and LSTM architectures, it provides a standardized evaluation framework to compare Nexora's custom hidden-service traffic footprint directly against standard encrypted Tor streams.
 
 ---
 
