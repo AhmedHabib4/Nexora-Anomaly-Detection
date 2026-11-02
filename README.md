@@ -40,6 +40,7 @@ The core role of this AI component is to analyze network telemetry, classify tra
 - **Tor Traffic Benchmarking:** Standardized evaluation framework comparing protocol stealth and node behavior against standard encrypted Tor traffic.
 - **Feature Engineering:** Extracts flow metrics including inter-arrival time (IAT), packet length distribution, payload entropy, and directional ratios.
 
+
 ---
 
 ## 🛠️ Tech Stack
@@ -63,3 +64,17 @@ The core role of this AI component is to analyze network telemetry, classify tra
 ├── evaluate.py            # Anomaly scoring & benchmark script
 ├── requirements.txt       # Python dependencies
 └── README.md              # Documentation
+
+---
+
+## Quick Start
+
+> Target platform is Windows with Python 3.10+ and a virtual environment.
+
+From `Nexora-Anomaly-Detection/` :
+
+```powershell
+python -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
+python src/feature_extraction/parse_pcap.py --input data/sample.pcap --output data/processed.csv
