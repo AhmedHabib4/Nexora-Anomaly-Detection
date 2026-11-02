@@ -1,6 +1,6 @@
 <div align="center">
 
-# Nexora — Anomaly Detection Subsystem
+# Nexora — Anomaly Detection
 
 **A Machine Learning Subsystem for the Post-Quantum, Invitation-Gated Anonymous Peer-to-Peer Overlay Network**
 
