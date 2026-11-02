@@ -17,13 +17,17 @@
 
 ---
 
-## 📌 Overview
+## 📌 AI Subsystem Overview
 
-**Nexora-Anomaly-Detection** is the dedicated machine learning intelligence layer for [Nexora](https://github.com/Youssef-Abo-Al-Ella/Nexora), a Post-Quantum, Invitation-Gated Anonymous Peer-to-Peer Overlay Network[cite: 18]. 
+This repository contains the dedicated **Artificial Intelligence and Machine Learning layer** designed to evaluate network traffic stealth and detect protocol anomalies. 
 
-While the core Nexora repository acts as the secure networking substrate—handling post-quantum cryptography, UDP socket routing, and distributed hash tables[cite: 6, 7]—this repository functions as its analytical engine. It was engineered specifically to analyze network telemetry, evaluate protocol stealth, and detect anomalous peer behavior[cite: 6].
+The core role of this AI component is to analyze network telemetry, classify traffic patterns, and detect anomalous peer behavior[cite: 6]. It determines whether custom overlay traffic can be mathematically distinguished from standard encrypted Tor streams. The AI pipeline executes this through three distinct phases:
 
-By parsing raw `.pcap` network captures, this subsystem extracts critical flow metrics (such as Inter-Arrival Time, flow duration, and packet length distributions) and processes them through predictive machine learning models. Using both Random Forest and LSTM architectures, it provides a standardized evaluation framework to compare Nexora's custom hidden-service traffic footprint directly against standard encrypted Tor streams.
+1. **Feature Engineering:** Parses raw network packet captures (`.pcap`) to extract critical behavioral flow metrics, including Inter-Arrival Time (IAT), packet length distributions, and overall flow durations.
+2. **Predictive Modeling:** Evaluates the network traffic using a dual-model architecture[cite: 2]:
+   - **Random Forest:** Provides rapid, high-efficiency tabular classification of the extracted packet features[cite: 2].
+   - **LSTM (Long Short-Term Memory):** Models sequential time-series dynamics to identify temporal anomalies and hidden patterns in the traffic flows[cite: 2].
+3. **Stealth Benchmarking:** Scores the extracted features to evaluate the underlying protocol's ability to resist machine learning-based traffic classification, comparing its footprint directly against Tor baseline data.
 
 ---
 
