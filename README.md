@@ -1,6 +1,6 @@
 <div align="center">
 
-# Nexora – AI Traffic-Analysis & Hidden-Service Inference
+# Nexora – AI Traffic-Analysis
 
 **An Offline Machine Learning Subsystem for Evaluating Traffic Stealth and Hidden-Service Detectability in Anonymous Overlay Networks**
 
