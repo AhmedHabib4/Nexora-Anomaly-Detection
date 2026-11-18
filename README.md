@@ -59,7 +59,7 @@ The offline evaluation pipeline (`ai/`) benchmarks two Random Forest classifiers
 
 <div align="center">
 
-![AI Pipeline Architecture](assets/figure_15_ai_pipeline.png)
+![AI Pipeline Architecture](assets/figure_1_ai_pipeline.png)
 *Figure 15: Synthetic dataset pack feeding per-flow (Model A) and per-minute (Model B) feature-engineering paths into Random Forest models with a 75/25 stratified train/test split.*
 
 </div>
